@@ -1,0 +1,139 @@
+@font-face {
+    font-family: SourceSansPro;
+    src: url('./fonts/SourceSansPro-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+/* Put fonts here */
+
+html {
+    font-family: SourceSansPro, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    background-color: #00141F;
+    color: #FFF;
+}
+
+@media only screen and (min-width: 768px) {
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+.itemContainer {
+    background-color: #001f2f;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+}
+
+.itemTitle {
+    font-size: large;
+}
+
+.itemDate {
+    font-size: small;
+    font-style: italic;
+}
+
+.itemContainer.highest {
+    border-left: solid 8px #AA0000;
+}
+
+.itemContainer.high {
+    border-left: solid 8px #AA5C00;
+}
+
+.itemContainer.medium {
+    border-left: solid 8px #D0A800;
+}
+
+.itemContainer.low {
+    border-left: solid 8px #FFF;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    font-size: large;
+    color: white;
+}
+
+textarea{
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    font-size: medium;
+    color: white;
+}
+
+select{
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    color: white;
+    font-size: medium;
+}
+
+button{
+    background-color: #001f2f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 20px;
+    margin: 10px 0;
+    font-size: medium;
+}
+
+.itemContainer button{
+    background-color: #00141F;
+}
