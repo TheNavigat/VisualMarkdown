@@ -125,11 +125,11 @@ select{
 }
 
 button{
-    background-color: #001f2f;
+    background-color: #06acff;
     color: white;
     border: none;
-    border-radius: 25px;
-    padding: 5px 20px;
+    border-radius: 10px;
+    padding: 20px;
     margin: 10px 0;
     font-size: medium;
 }

@@ -19,15 +19,13 @@ export default {
   data(){
     return{
       list1: [
-          { format: "H1", id: 1 },
-          { format: "H2", id: 2 },
-          { format: "H3", id: 3 },
-          { format: "H4", id: 4 }
+          { text:"", format: "H1", id: 1 },
+          { text:"", format: "H2", id: 2 },
+          { text:"", format: "H3", id: 3 },
+          { text:"", format: "H4", id: 4 }
       ],
       list2: [
-          { format: "Juan", id: 5 },
-          { format: "Edgard", id: 6 },
-          { format: "Johnson", id: 7 }
+
       ]
     }
   }

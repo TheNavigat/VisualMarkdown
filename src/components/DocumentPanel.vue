@@ -2,7 +2,7 @@
     <draggable
         class="dragArea list-group"
         :list="list2"
-        group="people"
+        group="markdown"
         @change="log"
       >
         <div
@@ -10,7 +10,9 @@
           v-for="element in list2"
           :key="element.format"
         >
-          {{ element.format }}
+        {{element.format}}
+        <input v-model="element.text">
+          
         </div>
 
     </draggable>
@@ -36,5 +38,7 @@ export default {
 </script>
 
 <style scoped>
-
+  div {
+    background: #479dff;
+  }
 </style>

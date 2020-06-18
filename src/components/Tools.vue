@@ -3,7 +3,7 @@
     <draggable
         class="dragArea list-group"
         :list="list1"
-        :group="{ name: 'people', pull: 'clone', put: false }"
+        :group="{ name: 'markdown', pull: 'clone', put: false }"
         @change="log"
     >
         <div
@@ -11,7 +11,9 @@
           v-for="element in list1"
           :key="element.format"
         >
+          <button>
           {{ element.format }}
+          </button>
         </div>
     </draggable>
     </div>
