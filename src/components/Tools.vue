@@ -5,11 +5,12 @@
         :list="list1"
         :group="{ name: 'markdown', pull: 'clone', put: false }"
         @change="log"
+        :clone="cloneMethod"
     >
         <div
           class="list-group-item"
           v-for="element in list1"
-          :key="element.format"
+          :key="element.id"
         >
           <button>
           {{ element.format }}
@@ -21,6 +22,7 @@
 
 <script>
 import draggable from "vuedraggable";
+let idGlobal = 5;
 
 export default {
     name: 'Tools',
@@ -33,6 +35,13 @@ export default {
     methods: {
       log: function(evt) {
         window.console.log(evt);
+      },
+      cloneMethod({id, format}){
+        console.log(id)
+        return {
+          id: idGlobal++,
+          format: format  
+        };
       }
     }
 }

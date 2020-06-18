@@ -8,7 +8,7 @@
         <div
           class="list-group-item"
           v-for="element in list2"
-          :key="element.format"
+          :key="element.id"
         >
         {{element.format}}
         <input v-model="element.text">
