@@ -7,27 +7,29 @@
         @change="log"
         :clone="cloneMethod"
     >
-        <div
+        <span
           class="list-group-item"
           v-for="element in list1"
           :key="element.id"
         >
           <button>
-          {{ element.format }}
+          <ComponentButton :format="element.format" />
           </button>
-        </div>
+        </span>
     </draggable>
     </div>
 </template>
 
 <script>
 import draggable from "vuedraggable";
+import ComponentButton from "./ComponentButton.vue"
 let idGlobal = 5;
 
 export default {
     name: 'Tools',
     components:{
-        draggable
+        draggable,
+        ComponentButton
     },
     props:{
       list1: Array
@@ -36,8 +38,7 @@ export default {
       log: function(evt) {
         window.console.log(evt);
       },
-      cloneMethod({id, format}){
-        console.log(id)
+      cloneMethod({format}){
         return {
           id: idGlobal++,
           format: format  
