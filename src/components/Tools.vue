@@ -23,7 +23,7 @@
 <script>
 import draggable from "vuedraggable";
 import ComponentButton from "./ComponentButton.vue"
-let idGlobal = 5;
+let idGlobal = 19;
 
 export default {
     name: 'Tools',

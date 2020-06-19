@@ -19,15 +19,24 @@ export default {
   data(){
     return{
       list1: [
-          { format: "H1", id: 1 },
-          { format: "H2", id: 2 },
-          { format: "H3", id: 3 },
-          { format: "H4", id: 4 },
-          { format: "H5", id: 5 },
-          { format: "H6", id: 6 },
-          { format: "B", id: 7 },
-          { format: "I", id: 8 },
-          { format: "U", id: 9 },
+          { format: "h1", id: 1 },
+          { format: "h2", id: 2 },
+          { format: "h3", id: 3 },
+          { format: "h4", id: 4 },
+          { format: "h5", id: 5 },
+          { format: "h6", id: 6 },
+          { format: "b", id: 7 },
+          { format: "i", id: 8 },
+          { format: "u", id: 9 },
+          { format: "code", id: 10 },
+          { format: "image", id: 11 },
+          { format: "hyperlink", id: 12 },
+          { format: "paragraph", id: 13 },
+          { format: "numbered-list", id: 14 },
+          { format: "bullets-list", id: 15 },
+          { format: "block-quote", id: 16 },
+          { format: "fenced-code-block", id: 17 },
+          { format: "horizontal-rule", id: 18 },
       ],
       list2: [
 
