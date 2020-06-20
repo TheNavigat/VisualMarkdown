@@ -26,7 +26,7 @@
 export default {
     name: 'ComponentButton',
     props: {
-     format: Text
+     format: String
     }
 }
 </script>

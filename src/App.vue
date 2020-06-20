@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import '../public/style/core.scss'
 import Tools from './components/Tools.vue'
 import DocumentPanel from './components/DocumentPanel.vue'
 
