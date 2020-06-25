@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <div>Welcome to Visual Markdown</div>
-    <Tools 
-      :list1="list1" 
-      class="col-6" 
+    <Tools
+      :list1="list1"
+      class="col-6"
     />
-    <DocumentPanel 
-      :list2="list2" 
-      class="col-6" 
+    <DocumentPanel
+      :list2="list2"
+      class="col-6"
     />
   </div>
 </template>
 
 <script>
-import '../public/style/core.scss'
+import './assets/style/core.scss'
 import Tools from './components/Tools.vue'
 import DocumentPanel from './components/DocumentPanel.vue'
 

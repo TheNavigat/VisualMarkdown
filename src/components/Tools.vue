@@ -46,13 +46,9 @@ export default {
       cloneMethod({format}){
         return {
           id: idGlobal++,
-          format: format  
+          format: format
         };
       }
     }
 }
 </script>
-
-<style scoped>
-
-</style>
