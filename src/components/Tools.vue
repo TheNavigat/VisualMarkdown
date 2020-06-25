@@ -34,6 +34,9 @@ export default {
     props:{
       list1: {
         type: Array,
+        default: function(){
+          return [{}]
+        }
       }
     },
     methods: {
