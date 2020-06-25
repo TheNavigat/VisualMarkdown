@@ -1,8 +1,14 @@
 <template>
   <div id="app">
     <div>Welcome to Visual Markdown</div>
-    <Tools v-bind:list1="list1" class="col-6"/>
-    <DocumentPanel v-bind:list2="list2" class="col-6"/>
+    <Tools 
+      :list1="list1" 
+      class="col-6" 
+    />
+    <DocumentPanel 
+      :list2="list2" 
+      class="col-6" 
+    />
   </div>
 </template>
 

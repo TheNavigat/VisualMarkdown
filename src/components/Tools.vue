@@ -1,23 +1,23 @@
 <template>
-    <div>
+  <div>
     <draggable
-        class="dragArea list-group"
-        :list="list1"
-        :group="{ name: 'markdown', pull: 'clone', put: false }"
-        @change="log"
-        :clone="cloneMethod"
+      class="dragArea list-group"
+      :list="list1"
+      :group="{ name: 'markdown', pull: 'clone', put: false }"
+      :clone="cloneMethod"
+      @change="log"
     >
-        <span
-          class="list-group-item"
-          v-for="element in list1"
-          :key="element.id"
-        >
-          <button>
+      <span
+        v-for="element in list1"
+        :key="element.id"
+        class="list-group-item"
+      >
+        <button>
           <ComponentButton :format="element.format" />
-          </button>
-        </span>
+        </button>
+      </span>
     </draggable>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -32,7 +32,9 @@ export default {
         ComponentButton
     },
     props:{
-      list1: Array
+      list1: {
+        type: Array,
+      }
     },
     methods: {
       log: function(evt) {
