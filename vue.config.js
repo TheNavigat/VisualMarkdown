@@ -1,3 +1,5 @@
 module.exports = {
-  publicPath: '/VisualMarkdown/'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/VisualMarkdown/'
+    : '/'
 }
