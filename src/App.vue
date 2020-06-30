@@ -1,13 +1,12 @@
 <template>
   <div id="app">
-    <div>Welcome to Visual Markdown</div>
     <Tools
       :list1="list1"
-      class="col-6"
+      class="col-12"
     />
     <DocumentPanel
       :list2="list2"
-      class="col-6"
+      class="col-12"
     />
   </div>
 </template>
@@ -32,18 +31,18 @@ export default {
           { format: "h4", id: 4 },
           { format: "h5", id: 5 },
           { format: "h6", id: 6 },
-          { format: "b", id: 7 },
-          { format: "i", id: 8 },
-          { format: "u", id: 9 },
-          { format: "code", id: 10 },
-          { format: "image", id: 11 },
-          { format: "hyperlink", id: 12 },
+          // { format: "b", id: 7 },
+          // { format: "i", id: 8 },
+          // { format: "u", id: 9 },
+          // { format: "code", id: 10 },
+          // { format: "image", id: 11 },
+          // { format: "hyperlink", id: 12 },
           { format: "paragraph", id: 13 },
-          { format: "numbered-list", id: 14 },
-          { format: "bullets-list", id: 15 },
-          { format: "block-quote", id: 16 },
-          { format: "fenced-code-block", id: 17 },
-          { format: "horizontal-rule", id: 18 },
+          // { format: "numbered-list", id: 14 },
+          // { format: "bullets-list", id: 15 },
+          // { format: "block-quote", id: 16 },
+          // { format: "fenced-code-block", id: 17 },
+          // { format: "horizontal-rule", id: 18 },
       ],
       list2: [
 
@@ -56,6 +55,5 @@ export default {
 <style>
 #app {
   text-align: center;
-  margin-top: 60px;
 }
 </style>

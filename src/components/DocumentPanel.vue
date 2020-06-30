@@ -11,7 +11,9 @@
       class="list-group-item"
     >
       {{ element.format }} 
-      <input v-model="element.text">
+
+      <DocumentPanel :list2="element.children" />
+        
     </div>
   </draggable>
 </template>
@@ -28,7 +30,9 @@ export default {
       list2: {
         type: Array,
         default: function(){
-          return [{}]
+          return [{
+
+          }]
         }
       }
     },

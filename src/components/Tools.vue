@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="toolbar">
     <draggable
       class="dragArea list-group"
       :list="list1"
@@ -46,7 +46,8 @@ export default {
       cloneMethod({format}){
         return {
           id: idGlobal++,
-          format: format
+          format: format,
+          children: []
         };
       }
     }

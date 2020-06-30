@@ -1,23 +1,23 @@
 <template>
   <div>
-    <h1 v-if="format=='h1'">
+    <span v-if="format=='h1'">
       H1
-    </h1>
-    <h2 v-if="format=='h2'">
+    </span>
+    <span v-if="format=='h2'">
       H2
-    </h2>
-    <h3 v-if="format=='h3'">
+    </span>
+    <span v-if="format=='h3'">
       H3
-    </h3>
-    <h4 v-if="format=='h4'">
+    </span>
+    <span v-if="format=='h4'">
       H4
-    </h4>
-    <h5 v-if="format=='h5'">
+    </span>
+    <span v-if="format=='h5'">
       H5
-    </h5>
-    <h6 v-if="format=='h6'">
+    </span>
+    <span v-if="format=='h6'">
       H6
-    </h6>
+    </span>
     <b v-if="format=='b'">B</b>
     <i v-if="format=='i'">I</i>
     <u v-if="format=='u'">U</u>
