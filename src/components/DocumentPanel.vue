@@ -11,8 +11,8 @@
       class="list-group-item"
     >
       {{ element.format }} 
-
-      <DocumentPanel :list2="element.children" />
+      <input v-if="element.format=='span'" v-model="element.text" />
+      <DocumentPanel v-else :list2="element.children" />
         
     </div>
   </draggable>

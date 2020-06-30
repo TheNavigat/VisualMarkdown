@@ -43,6 +43,8 @@ export default {
           // { format: "block-quote", id: 16 },
           // { format: "fenced-code-block", id: 17 },
           // { format: "horizontal-rule", id: 18 },
+          { format: "span", id: 19 },
+
       ],
       list2: [
 

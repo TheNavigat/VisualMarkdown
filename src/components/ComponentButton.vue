@@ -30,6 +30,7 @@
     <span v-if="format=='block-quote'">[Quote]</span>
     <span v-if="format=='fenced-code-block'">code block</span>
     <span v-if="format=='horizontal-rule'">====</span>
+    <span v-if="format=='span'">Span</span>
   </div>
 </template>
 
