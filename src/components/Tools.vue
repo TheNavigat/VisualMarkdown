@@ -48,7 +48,7 @@ export default {
           id: idGlobal++,
           format: format,
           children: [],
-          properties: {bold: true, italic: false, underline: false}
+          properties: {bold: false, italic: false, underline: false}
         };
       }
     }

@@ -9,6 +9,8 @@
       :list2="list2"
       class="col-12"
     />
+
+    <PropertiesModal @update:properties="updateProperties"/>
   </div>
 </template>
 
@@ -16,12 +18,14 @@
 import './assets/style/core.scss'
 import Tools from './components/Tools.vue'
 import DocumentPanel from './components/DocumentPanel.vue'
+import PropertiesModal from './components/PropertiesModal'
 
 export default {
   name: 'App',
   components: {
     Tools,
-    DocumentPanel
+    DocumentPanel,
+    PropertiesModal
   },
   data(){
     return{
@@ -50,6 +54,32 @@ export default {
       list2: [
 
       ]
+    }
+  },
+  methods:{
+    updateProperties(id, updatedElement){
+      // console.log(id)
+      // this.list2 = 
+      this.list2 = (function upd(data, newData) {
+          return data.map(element => {
+              if (element.children) {
+                  var o = element
+                  o.children = upd(element.children, newData);
+                  return o;
+              }
+              else if (element.id === id) {
+                  return newData;
+              } else return element;
+          });
+      })(this.list2, updatedElement);
+      // this.list2 = this.list2.map(item =>{
+      //   // console.log(item.id, id, item, updatedElement);
+      //   if(item.id===id){
+      //     item = updatedElement;
+      //   }
+      //   return item;
+      // })
+      console.log(this.list2)
     }
   }
 }

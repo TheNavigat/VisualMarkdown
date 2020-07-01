@@ -1,9 +1,5 @@
 <template>
   <div>
-    <modal name="properties-modal">
-      <input type="checkbox" id="checkbox" v-model="el.properties.bold">
-      Bold
-    </modal>
     <draggable
       class="dragArea list-group documentDrag"
       :list="list2"
@@ -37,17 +33,6 @@ export default {
     components:{
         draggable
     },
-    data(){
-      return{
-        el:{
-          properties:{
-            bold: false,
-            italic: false,
-            underline: false
-          }
-        }
-      }
-    },
     props: {
       list2: {
         type: Array,
@@ -63,9 +48,7 @@ export default {
         window.console.log(evt);
       },
       show (element) {
-        this.el = element
-        this.$modal.show('properties-modal');
-        console.log(element)
+        this.$modal.show('properties-modal', {element: element});
       },
       hide () {
         this.$modal.hide('properties-modal');
