@@ -47,7 +47,8 @@ export default {
         return {
           id: idGlobal++,
           format: format,
-          children: []
+          children: [],
+          properties: {bold: true, italic: false, underline: false}
         };
       }
     }

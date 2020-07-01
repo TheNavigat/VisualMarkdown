@@ -25,7 +25,8 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-processor-html": "^1.0.0",
     "vue-template-compiler": "^2.6.11",
-    "vuedraggable": "^2.23.2"
+    "vuedraggable": "^2.23.2",
+    "vue-js-modal": "2.0.0-rc.3"
   },
   "eslintConfig": {
     "root": true,
