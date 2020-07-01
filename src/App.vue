@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="help">Drag and drop inside areas with white borders. Put a span block inside any block to insert text.</div>
     <Tools
       :list1="list1"
       class="col-12"

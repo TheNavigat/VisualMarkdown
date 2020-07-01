@@ -1,6 +1,6 @@
 <template>
   <draggable
-    class="dragArea list-group"
+    class="dragArea list-group documentDrag"
     :list="list2"
     group="markdown"
     @change="log"
